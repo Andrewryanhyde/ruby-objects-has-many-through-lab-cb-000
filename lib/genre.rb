@@ -1,4 +1,5 @@
 class Genre
+  @@all = []
 
   attr_accessor :name, :artist
 
@@ -6,7 +7,8 @@ class Genre
     @name = name
   end
 
-  def songs 
+  def songs
     @songs
+  end
 
 end
