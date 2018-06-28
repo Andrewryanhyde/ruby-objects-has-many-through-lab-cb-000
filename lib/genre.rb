@@ -6,4 +6,7 @@ class Genre
     @name = name
   end
 
+  def songs 
+    @songs
+
 end
