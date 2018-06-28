@@ -17,12 +17,11 @@ class Artist
     @@all
   end
 
-  def new_song(name, genre)
-    name = Song.new(name)
-    name.artist = artist
-    name.genre = genre
-    @songs << name
-
+  def new_song(title, genre)
+    title = Song.new(title)
+    title.artist = artist
+    title.genre = genre
+    @songs << title
   end
 
   def songs
