@@ -7,7 +7,6 @@ class Artist
   def initialize(name)
     @name = name
     @@all << self
-    @songs = []
   end
 
 
@@ -15,15 +14,14 @@ class Artist
     @@all
   end
 
-  def new_song(title, genre)
-    title = Song.new(title)
-    title.artist = artist
-    title.genre = genre
-    @songs << title
+  def new_song(name, genre)
+    song = Song.new(name, self, genre)
   end
 
   def songs
-    @songs.select {|song| song.artist}
+    @songs.all.select do |song| 
+      song.artist == self
+    end      
   end
 
 
