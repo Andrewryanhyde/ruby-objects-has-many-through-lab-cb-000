@@ -22,4 +22,6 @@ class Doctor
       appintments.doctor == self
     end
   end
+
+  
 end
