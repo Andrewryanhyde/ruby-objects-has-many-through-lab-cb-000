@@ -8,14 +8,12 @@ class Genre
   end
 
   def self.all
-    @@all.each do |genre|
-      genre.artist
-    end
+    @all
   end
 
 
   def songs
-    @songs
+
   end
 
 end
