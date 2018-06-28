@@ -5,6 +5,7 @@ class Genre
 
   def initialize(name)
     @name = name
+    @songs = []
   end
 
   def self.all
@@ -14,7 +15,7 @@ class Genre
 
   def songs
     @@all.each do |genre|
-      genre.artist
+      @songs << genre.artist
     end
   end
 
