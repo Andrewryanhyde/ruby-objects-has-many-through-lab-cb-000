@@ -22,8 +22,7 @@ class Genre
 
 
   def songs
-    @@all.each do |genre|
-      genre.song
+    Song.all.collect {|song| song.genre == self}
     end
   end
 
