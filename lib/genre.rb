@@ -15,7 +15,7 @@ class Genre
 
   def songs
     @@all.each do |genre|
-      @songs << genre.song
+      genre.song
     end
   end
 
